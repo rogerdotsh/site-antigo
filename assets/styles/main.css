@@ -1,0 +1,350 @@
+@font-face {
+    font-family: 'Iosevka Aile';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/iosevka-aile@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/iosevka-aile@latest/latin-400-normal.woff) format('woff');
+  }
+
+* {
+padding: 0;
+margin: 0;
+}
+
+/* COLORSRSRSSSSS */
+
+
+::selection {
+    color: var(--bg);
+    background-color: var(--text);
+}
+:root {
+    --text: #0C0C0C;
+    --bg: #fff9ef;
+    transition: all 0.5s ease-in-out;
+}
+
+.darkmode {
+    --text: #fff9ef;
+    --bg: #0C0C0C;
+    transition: all 0.5s ease-in-out;
+}
+
+.darkmode .sepiaimg {
+    filter:invert(100%) sepia(30%);
+}
+
+/*
+END OF COLORS
+-------------------------------
+do not fuck up the stuff above
+
+header shit
+*/
+
+
+body {
+    margin-left: 20dvw;
+    margin-right: 20dvw;
+    flex-wrap: wrap;
+    font-family: 'Iosevka Aile';
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+header a:hover {
+    background-color: var(--text);
+    color: var(--bg);
+    text-transform: uppercase;
+    transform: scale(1.25);
+    transition: all .2s ease-in-out;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+header img{
+    transform: scale(1);
+    transition: all .4s ease;
+    filter: invert(0%) sepia(25%);
+}
+header img:hover {
+    transform: scale(1.2);
+    transition: all .4s ease;
+}
+
+header div {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.sub-header {
+    border-bottom: 1px solid var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-header a {
+    padding-right: 1rem;    
+    padding-left: 1rem;
+    border-left: var(--text) 1px solid;
+    border-right: var(--text) 1px solid;
+}
+
+.sub-header p {
+    height: 1.1rem;
+    white-space: wrap;
+    text-align: center;
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: hidden;
+    width: 50%;
+    height: 1rem;
+}
+
+#clock {
+    background-color: var(--text);
+    color: var(--bg);
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+/*
+END OF HEADER
+--------------------------
+Footer stuff
+*/
+
+footer {
+    display: grid;
+    border-top: 1px var(--text) solid;
+
+    grid-template-areas:
+    'c1 c2 c2 c3 c3';
+}
+
+.c1 { grid-area: c1; display: flex; * {padding-left: 1.618rem;}}
+.c2 { grid-area: c2; display: flex;}
+.c3 { grid-area: c3; display: flex;  border-left: var(--text) 1px solid;}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer li {
+    padding-left: 0;
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    width: 50%;
+}
+
+.buttons a {
+    padding-left: 0;
+    margin: 0;
+    gap: 0px;
+    scale: 100%;
+}
+
+.buttons a:hover {
+    background: none;
+}
+/*
+END OF FOOTER
+-----------------------------
+article thingies
+*/
+
+h1 {
+    font-weight: bolder;
+}
+.h {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.h h1, h2, h3, h4, h5, h6 {
+    padding-right: 1rem;
+}
+
+.h svg {
+    height: 100%;
+    margin-right: 1rem;
+
+}
+
+
+.h:hover a[aria-hidden] {
+	display: flex;
+    align-self: center;
+    position: relative;
+    left: 0;
+
+}
+.h a[aria-hidden] { display:none; }
+
+.date {
+	margin-top: 1em;
+    position:relative;
+    right: 0;
+}
+
+article {
+    margin-right: 2dvw;
+    margin-left: 2dvw;
+}
+
+article p {
+    padding-left: 1.618rem;
+}
+
+.h div {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+/*
+END OF ARTICLE
+-----------------------------
+general text shit goes here
+*/
+
+body a {
+    color: var(--text);
+    text-transform: none;
+    transform: scale(1.0);
+    transition: all 0.1s ease;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--text);
+    color: var(--bg);
+    transition: all .2s ease-in-out;
+}
+
+
+body h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+body h1 {
+    font-weight: bolder;
+    text-shadow:
+    var(--bg) 0px 3px 0px,
+    var(--text) 0px 4px 0px;
+}
+
+
+.menu {
+    color: inherit;
+    border: var(--text) solid 1px;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    width:fit-content;
+}
+
+.menu a {
+    display: flex;
+    flex-wrap: wrap;
+    height: 3rem;
+    border: var(--text) 1px solid;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem;
+    padding-right: 0.55rem;
+    padding-left: 0.55rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+
+
+.menu-icon {
+    padding: 0.2rem;
+    margin-right: 0.4rem;
+    border: var(--text) 1px solid;
+    fill: var(--text);
+    
+}
+
+
+.list {
+    color: inherit
+}
+#theme-switch{
+    background-color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: 0px;
+}
+
+svg{
+    fill: var(--text);
+    transition: all 0.5s ease-in-out;
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+/* aria-hidden stuff copied from vern.cc */
+
+.no {
+    color: inherit;
+    text-decoration: underline 2px ;
+}
+.no:hover {
+    animation-duration: 0.5s;
+	animation-name: no;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+  }
+
+@keyframes no {
+	from {
+	  transform: rotate(-10deg);
+      scale: 1.2;
+	}
+  
+	to {
+	  transform: rotate(10deg);
+      scale: 1.2;    
+    }
+}
