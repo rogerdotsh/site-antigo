@@ -52,6 +52,7 @@ body {
     background-color: var(--bg);
 }
 
+
 header {
     display: flex;
     align-items: center;
@@ -107,6 +108,10 @@ header div {
     border-right: var(--text) 1px solid;
 }
 
+.selected-lang {
+    background-color: var(--text);
+    color: var(--bg);
+}
 .sub-header p {
     height: 1.1rem;
     white-space: wrap;
