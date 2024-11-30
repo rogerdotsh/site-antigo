@@ -102,8 +102,6 @@ header div {
 }
 
 .sub-header a {
-    padding-right: 1rem;    
-    padding-left: 1rem;
     border-left: var(--text) 1px solid;
     border-right: var(--text) 1px solid;
 }
