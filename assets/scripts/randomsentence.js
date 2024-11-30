@@ -1,7 +1,7 @@
 const sentences = [
-    "EU ODEIO CÓLICA!! ⠀⠀⠀⠀ agora é só esperar a namorada cair do céu.",
+    "LULA! CADÊ A NAMORADA?",
     "Oi.",
-    "AMD é melhor que NVIDIA, quanto mais cedo você perceber, melhor.",
+    "AMD é melhor que NVIDIA, cai na real.",
     "ERROR_404 COMEDIA_NOT_FOUND",
     "Me mama, Bill Gates.",
     "Eu devia parar de falar palavrão nessa porra.",
